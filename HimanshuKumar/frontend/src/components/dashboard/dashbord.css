@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+body{
+  background-color: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+#container{
+  position: relative;
+  top: 50px;
+  width: 90%;
+  margin: 5%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3%;
+  transition: flex-wrap 0.5s ease;
+}
+.element{
+  width: 400px;
+  height: 300px;
+  background-color: #000;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.element:hover{
+  width: 430px;
+  height: 330px;
+}
+.element:hover p{
+  display: block;
+}
+.element p{
+  font-size: 2rem;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+  color: black;
+}
+#first{
+  background-image: url(../../static/laptop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#second{
+  background-image: url(../../static/smartphone1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#third{
+  background-image: url(../../static/grocerry.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#fourth{
+    background-image: url(../../static/fragrance.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #fifth{
+    background-image: url(../../static/skincare.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #sixth{
+    background-image: url(../../static/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

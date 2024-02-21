@@ -1,0 +1,60 @@
+*{
+    font-family: cursive;
+
+}
+h1,h2{
+    font-weight: bolder;
+    font-size: 45px;
+    font-family: cursive;
+}
+h2{
+    font-size: 30px;
+    color: grey;
+}
+.container{
+        background-color: #f0f6f8;
+        display: flex;
+        /* padding: 10px; */
+        border-radius: 20px;
+        border: solid 2px rgb(78, 164, 201);
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 10vh;
+        padding: 20px;
+        width: 80%;
+        flex-direction: column;     
+}
+.div1{
+padding: 20px;
+}
+.items{
+    padding-left: 10px;
+    padding: 13px;
+    border-radius: 10px;
+    margin: 5px;
+
+    border: 1px solid orange;
+            background-color: peachpuff;
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+}
+input{
+    border: none;
+    background-color: inherit;
+}
+.add-data{
+    margin-right: 15px;
+    background-color: #9fdaef;
+    padding: 15px;
+    /* width: 80%; */
+    border-radius: 15px;
+}
+.highlighted-input {
+    padding: 5px;
+    border: 1px solid rgb(255, 183, 0);
+    border-radius: 5px;
+    background-color: lightyellow;
+    /* Add any other styles you want for highlighting */
+  }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <div class="navbar-container">
+      <img src="afd000" alt="iamge">
+      <div class="profile-pic">
+        <img src="path_to_your_profile_pic" alt="Profile" />
+      </div>
+      <div class="username">
+        <p>Your Username</p>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+        <button>Search</button>
+      </div>
+      <div class="cart-button">
+        <Link to="/cart">Cart</Link>
+      </div>
+      <div class="logout">
+        <Link to="/logout">Logout</Link>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
+
+<style>
+  nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-pic img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.search-bar input {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    margin-top: 10px;
+  }
+
+  .cart-button,
+  .logout {
+    margin-top: 10px;
+  }
+}
+
+</style>

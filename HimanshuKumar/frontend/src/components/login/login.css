@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+
+body {
+  background: #c0c0c0;
+  font-family: Raleway, sans-serif;
+  color: #666;
+  
+}
+
+.login {
+    position: relative;
+    top: 10vh;
+  margin: 20px auto;
+  padding: 40px 50px;
+  max-width: 400px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 1px 1px 1px #666;
+}
+.login input {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 14px 12px;
+  font-size: 16px;
+  border-radius: 2px;
+  font-family: Raleway, sans-serif;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  border: 1px solid #c0c0c0;
+  transition: 0.2s;
+}
+
+.login input[type="text"]:hover {
+  border-color: #f44336;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.login input[type="submit"] {
+  border: none;
+  background: #ef5350;
+  color: white;
+  font-weight: bold;
+  transition: 0.2s;
+  margin: 20px 0px;
+}
+
+.login input[type="submit"]:hover {
+  background: #f44336;
+}
+
+.login h2 {
+  margin: 20px 0 0;
+  color: #ef5350;
+  font-size: 28px;
+}
+
+.login p {
+  margin-bottom: 40px;
+}
+
+.links {
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid #c0c0c0;
+  margin-bottom: 10px;
+}
+
+.login h2,
+.login p,
+.login a {
+  text-align: center;
+}
+
+.login a {
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.login a:visited {
+  color: inherit;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+
+/* CSS */
+
+.login input[type="submit"]{
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 45px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.login input[type="submit"]:hover,
+.login input[type="submit"]:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}

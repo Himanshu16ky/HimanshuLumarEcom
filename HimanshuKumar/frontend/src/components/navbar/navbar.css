@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: auto;
+}
+.navbarz{
+  z-index: 10;
+}
+html {
+  scroll-snap-type: proximity;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y proximity;
+}
+
+body {
+  background-color: #1b2223;
+  color: #111010;
+  font-family: Monospace;
+  margin-top: 100px; /* Adjusted margin-top for content wrap */
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: #9ca6bb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-bottom: 1.5px solid #1b2223;
+}
+
+#portrait-frame {
+  display: flex;
+  align-items: center;
+}
+
+#portrait {
+  width: 90px;
+  border: 5px dotted rgb(65, 95, 156);
+  border-radius: 100px;
+  /* padding: 0.4rem; */
+  margin-left: 3rem;
+  margin-right: 0.5rem;
+}
+
+#title {
+  font-size: 1.5rem;
+}
+
+#nav-items {
+  /* width: 55%; */
+  height: 70px;
+  margin-right: 20px;
+}
+
+.nav-icon,
+#nav-check {
+  display: none;
+}
+
+#nav-items > ul {
+  /* padding-right: 5%; */
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 100%;
+  /* width: 100%; */
+}
+
+#nav-items > ul > li {
+  list-style-type: none;
+  padding: 10px;
+  padding-left: 38px;
+  /* padding-top: 0px; */
+  margin: 20px;
+  text-align: center;
+  flex-grow: 1;
+
+  /* max-width: 15%; */
+}
+#nav-items > ul > li form {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: flex-start; */
+  /* width: 100%; */
+  
+}
+
+#nav-items > ul > li form input {
+  width: 100%; /* Adjust the input width based on your preference */
+}
+
+#nav-items > ul > li form button {
+  margin: 3px;
+  width: 30%; /* Adjust the button width based on your preference */
+}
+
+#nav-items > ul > li:hover {
+  /* background-color: #bfc9da;
+  border: 2px outset #4d7fb9;
+  border-radius: 5px; */
+  cursor: pointer;
+}
+
+#nav-items > ul > li:nth-of-type(3) {
+  width: 100px;
+}
+
+#nav-items > ul > li:nth-of-type(4) {
+  width: 122px;
+}
+
+#nav-items > ul > li > a {
+  text-decoration: none;
+  display: block;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  color: #111010;
+  font-size: 1rem;
+}
+.cartconatiner{
+  margin: 100px;
+  padding: 100%;
+}
+@media screen and (max-width: 750px) {
+  nav {
+    height: 80px;
+  }
+
+  #portrait {
+    width: 75px;
+    margin-left: 1rem;
+    margin-right: 0.8rem;
+  }
+
+  #title {
+    font-size: 1rem;
+  }
+
+  #nav-items {
+    overflow: hidden;
+    margin-left: 1px;
+  }
+
+  #nav-items > ul {
+    flex-wrap: wrap;
+    position: absolute;
+    display: block;
+    width: calc(100% + 4px);
+    transition: height 0.3s step-start;
+    overflow-y: hidden;
+    top: 79px;
+    left: -2px;
+  }
+
+  #nav-items > ul > :last-child {
+    border-bottom: 1.5px solid #254773;
+  }
+
+  #nav-items > ul > li {
+    width: 100.5vw;
+    min-width: 200px;
+    height: 59px;
+    border: 1px solid #254773;
+    border-radius: 0;
+    background-color: #bfc9da;
+  }
+
+  #nav-items > ul > li:hover {
+    border: 2px outset #16e0b1;
+    border-radius: 2px;
+  }
+
+  #nav-items > ul > li:nth-of-type(3) {
+    width: 100.5vw;
+  }
+
+  #nav-items > ul > li:nth-of-type(4) {
+    width: 100.5vw;
+  }
+
+  #nav-items > ul > li:hover .nav_link {
+    line-height: 1.25;
+  }
+
+  #nav-items > ul > li > a {
+    height: 53px;
+    line-height: 1.9;
+  }
+
+  .nav-icon {
+    display: inline-block;
+    float: right;
+    line-height: 70px;
+  }
+
+  .nav-icon > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    vertical-align: middle;
+  }
+
+  .nav-icon > label:hover {
+    cursor: pointer;
+  }
+
+  .nav-icon > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 3px solid #254773;
+  }
+
+  #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+
+  #nav-check:checked ~ .nav-links {
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+.trolleyImage {
+  position: relative;
+  top: 20px;
+  height: 40px;
+  width: 40px;
+}
+
+/* .cart-info {
+  position: relative;
+} */
+
+.price {
+  position: relative;
+  left: -40px;
+  /* bottom: 15px; */
+}
+
+.count {
+  position: relative;
+  top: 12px;
+  left: -10px;
+}
